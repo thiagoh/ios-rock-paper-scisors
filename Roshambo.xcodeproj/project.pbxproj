@@ -16,6 +16,7 @@
 		6EC49B0C1E28684B00A16AF3 /* PaperWinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC49B0B1E28684B00A16AF3 /* PaperWinsViewController.swift */; };
 		6EC49B0E1E2868E100A16AF3 /* RockWinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC49B0D1E2868E100A16AF3 /* RockWinsViewController.swift */; };
 		6EC49B101E2868EA00A16AF3 /* ScisorsWinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC49B0F1E2868EA00A16AF3 /* ScisorsWinsViewController.swift */; };
+		6EC49B121E286BB700A16AF3 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC49B111E286BB700A16AF3 /* GamePlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6EC49B0B1E28684B00A16AF3 /* PaperWinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperWinsViewController.swift; sourceTree = "<group>"; };
 		6EC49B0D1E2868E100A16AF3 /* RockWinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockWinsViewController.swift; sourceTree = "<group>"; };
 		6EC49B0F1E2868EA00A16AF3 /* ScisorsWinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScisorsWinsViewController.swift; sourceTree = "<group>"; };
+		6EC49B111E286BB700A16AF3 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				6EC49B0B1E28684B00A16AF3 /* PaperWinsViewController.swift */,
 				6EC49B0D1E2868E100A16AF3 /* RockWinsViewController.swift */,
 				6EC49B0F1E2868EA00A16AF3 /* ScisorsWinsViewController.swift */,
+				6EC49B111E286BB700A16AF3 /* GamePlayViewController.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				6EC49B0C1E28684B00A16AF3 /* PaperWinsViewController.swift in Sources */,
 				6EC49B0E1E2868E100A16AF3 /* RockWinsViewController.swift in Sources */,
 				6EC49AFA1E2867E100A16AF3 /* ViewController.swift in Sources */,
+				6EC49B121E286BB700A16AF3 /* GamePlayViewController.swift in Sources */,
 				6EC49AF81E2867E100A16AF3 /* AppDelegate.swift in Sources */,
 				6EC49B101E2868EA00A16AF3 /* ScisorsWinsViewController.swift in Sources */,
 				6EC49B0A1E28683100A16AF3 /* RootViewController.swift in Sources */,
