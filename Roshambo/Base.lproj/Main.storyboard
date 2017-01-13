@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jHQ-dc-COD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Root Controller" customClass="RootViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-H0-yQf">
+                                <rect key="frame" x="150" y="177" width="75" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <state key="normal" image="paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJP-4x-JLi">
+                                <rect key="frame" x="73" y="301" width="75" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rock"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg8-41-hNn">
+                                <rect key="frame" x="232" y="301" width="75" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="SkH-Ql-DJe" kind="show" identifier="scisorsSegue" id="mnq-PF-Get"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-m5-Gpb">
+                                <rect key="frame" x="151" y="420" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RMK-S7-Por"/>
+                    <connections>
+                        <segue destination="Ef2-oN-YmM" kind="show" identifier="paperSegue" id="aHm-df-Bmy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-546"/>
+        </scene>
+        <!--Rock Wins View Controller-->
+        <scene sceneID="yce-Xh-xkB">
+            <objects>
+                <viewController storyboardIdentifier="paperWinsStoryboardId" id="R9s-zg-krl" customClass="RockWinsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TXd-uk-ROE"/>
+                        <viewControllerLayoutGuide type="bottom" id="zFW-fd-SLJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQn-x4-yI3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-S2-aDL">
+                                <rect key="frame" x="67" y="123" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VjS-Q5-4mZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocks breaks scisors. You " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="079-xP-JKe">
+                                <rect key="frame" x="86" y="363" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ShJ-S2-aDL" firstAttribute="top" secondItem="TXd-uk-ROE" secondAttribute="bottom" constant="103" id="5WK-Za-tzj"/>
+                            <constraint firstItem="ShJ-S2-aDL" firstAttribute="leading" secondItem="jQn-x4-yI3" secondAttribute="leadingMargin" constant="51" id="Qcl-l1-RV2"/>
+                            <constraint firstItem="079-xP-JKe" firstAttribute="centerX" secondItem="ShJ-S2-aDL" secondAttribute="centerX" id="YUh-CG-wmZ"/>
+                            <constraint firstItem="zFW-fd-SLJ" firstAttribute="top" secondItem="079-xP-JKe" secondAttribute="bottom" constant="283" id="aNk-pD-CeP"/>
+                            <constraint firstItem="079-xP-JKe" firstAttribute="centerX" secondItem="jQn-x4-yI3" secondAttribute="centerX" id="w21-jo-Ffz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuK-JB-xk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="-1168"/>
+        </scene>
+        <!--Scisors Wins View Controller-->
+        <scene sceneID="6Yd-iI-GYg">
+            <objects>
+                <viewController id="SkH-Ql-DJe" customClass="ScisorsWinsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVr-R8-YE4"/>
+                        <viewControllerLayoutGuide type="bottom" id="0de-Bl-1ml"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44i-Yj-OxB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EUY-5B-lZ9">
+                                <rect key="frame" x="67" y="196" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="CVa-Mp-sPG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scisors cur paper. You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-Jm-SbL">
+                                <rect key="frame" x="102" y="439" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EUY-5B-lZ9" firstAttribute="top" secondItem="cVr-R8-YE4" secondAttribute="bottom" constant="132" id="9GP-TP-owO"/>
+                            <constraint firstItem="EUY-5B-lZ9" firstAttribute="leading" secondItem="44i-Yj-OxB" secondAttribute="leadingMargin" constant="51" id="COa-hA-iUU"/>
+                            <constraint firstItem="0de-Bl-1ml" firstAttribute="top" secondItem="qh9-Jm-SbL" secondAttribute="bottom" constant="207" id="JiI-FA-ALT"/>
+                            <constraint firstItem="qh9-Jm-SbL" firstAttribute="centerX" secondItem="EUY-5B-lZ9" secondAttribute="centerX" id="aa1-yZ-e4S"/>
+                            <constraint firstItem="qh9-Jm-SbL" firstAttribute="centerX" secondItem="44i-Yj-OxB" secondAttribute="centerX" id="uyK-we-whU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8M-eZ-WRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143" y="327"/>
+        </scene>
+        <!--Paper Wins View Controller-->
+        <scene sceneID="rmL-O6-Vn0">
+            <objects>
+                <viewController id="Ef2-oN-YmM" customClass="PaperWinsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d0O-vu-e8f"/>
+                        <viewControllerLayoutGuide type="bottom" id="xBU-Tf-BbA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SXT-NL-xSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkz-Ll-uML">
+                                <rect key="frame" x="67" y="189" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper over rocks. You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY3-50-gBr">
+                                <rect key="frame" x="104.5" y="422" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xBU-Tf-BbA" firstAttribute="top" secondItem="jY3-50-gBr" secondAttribute="bottom" constant="224" id="033-Uy-eRX"/>
+                            <constraint firstItem="jY3-50-gBr" firstAttribute="centerX" secondItem="SXT-NL-xSR" secondAttribute="centerX" id="IXk-FH-zFG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4e-NJ-Bko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141.5999999999999" y="-440.32983508245883"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TUF-K9-ghj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jHQ-dc-COD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qim-az-knX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hyv-wK-9Fh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kn3-4n-TCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-545.57721139430294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+</document>
