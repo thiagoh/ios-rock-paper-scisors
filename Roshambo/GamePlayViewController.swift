@@ -16,6 +16,15 @@ class GamePlayViewController: UIViewController {
   init?(coder aDecoder: NSCoder, initialText text: String) {
     super.init(coder: aDecoder);
     self.initialText = text;
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Play again!", style: UIBarButtonItemStyle.plain, target: self, action: #selector(playAgain));
+  }
+
+  func playAgain(_ navigation: Any) {
+    print("play again", navigation);
+
+    if let navigationController = navigationController {
+      navigationController.popToRootViewController(animated: true);
+    }
   }
 
   required init?(coder aDecoder: NSCoder) {

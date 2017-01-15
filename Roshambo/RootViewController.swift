@@ -27,7 +27,7 @@ class RootViewController: UIViewController {
 
     controller = self.storyboard?.instantiateViewController(withIdentifier: "paperWinsStoryboardId") as! RockWinsViewController;
     setText(controller);
-
+    
     self.navigationController?.pushViewController(controller, animated: true);
   }
 
